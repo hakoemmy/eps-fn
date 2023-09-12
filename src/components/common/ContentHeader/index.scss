@@ -1,0 +1,13 @@
+.content-header {
+    .content-header-button {
+        margin-left: 20px;
+        height: 35px;
+    }
+    .inputs-container {
+        margin-top: 10px;
+        margin-bottom: 15px
+    }
+    &.sticky-top {
+        z-index: 999;
+    }
+}

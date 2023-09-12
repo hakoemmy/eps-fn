@@ -1,0 +1,52 @@
+@import '../../../css/variable.scss';
+
+.fleetcon-header {
+  padding-right: 30px !important;
+  .title {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 32px;
+    color: #31357c;
+  }
+
+  .username {
+    span {
+      font-weight: 500;
+      font-size: 15px;
+      color: rgba(0, 0, 0, 0.85);
+    }
+  }
+  .fleetcon-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .fleetcon-header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+   .avatar, .username{
+      margin-left: 15px;
+    }
+    .username {
+      margin-right: 15px;
+    }
+    .notifications {
+      margin-right: 20px;
+    }
+  }
+  .fleetcon-header-left {
+    display: flex;
+    flex: 1;
+  }
+  .fleetcon-header-middle {
+    flex: 1;
+    text-align: center;
+  }
+  .company-name{
+    color: $text-color;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}

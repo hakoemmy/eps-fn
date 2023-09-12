@@ -1,0 +1,52 @@
+.timeline-calendar {
+  @mixin color($name) {
+    background-color: $name;
+    border-color: $name;
+  }
+
+  .border {
+    border: 1px solid white;
+  }
+  .yellow {
+    @extend .border;
+    @include color(#FFBA38);
+  }
+  .green {
+   @extend .border;
+   @include color( #57B793);
+  }
+  .red {
+    @extend .border;
+    @include color(#EB5729);
+  }
+  .blue {
+    @extend .border;
+    border-color: #585FE5;
+    color: #585FE5 !important;
+  }
+  .sticky {
+    position: sticky;
+    z-index: 999;
+    background-color: white;
+  }
+  .sticky-bottom {
+    @extend .sticky;
+    bottom: 0;
+  }
+  .sticky-left {
+    @extend .sticky;
+    left: 0;
+    z-index: 998
+  }
+  .sticky-top {
+    @extend .sticky;
+    top: 60px;
+  }
+  .scroll-bar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none
+  }
+  .scroll-bar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+}

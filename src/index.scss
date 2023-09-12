@@ -1,0 +1,147 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import './css/variable.scss';
+
+body {
+  margin: 0;
+  font-family: 'Poppins',sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.overview {
+  .table-title {
+    font-size: 18px;
+    margin-left: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $text-color;
+  }
+}
+
+.edit-data {
+  margin-right: 25px;
+  &:hover {
+    filter: invert(31%) sepia(64%) saturate(4189%) hue-rotate(223deg) brightness(110%) contrast(101%);
+  }
+}
+.delete-data {
+    &:hover {
+    filter: invert(16%) sepia(98%) saturate(4796%) hue-rotate(354deg) brightness(92%) contrast(117%);
+  }
+}
+
+.ant-modal-body,
+.ant-modal-header,
+.ant-modal-footer {
+  padding: 20px 48px;
+  border: none;
+}
+
+.ant-modal-header {
+  padding-top: 40px;
+}
+.ant-modal-footer {
+  padding-bottom: 40px;
+  padding-top: 0px;
+}
+
+.ant-form-item-label>label {
+  font-size: 16px;
+  color: #656161;
+}
+
+.ant-form-item {
+  .ant-input-affix-wrapper {
+    border-radius: 8px !important;
+    align-items: center;
+    display: flex;
+    background: white;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .ant-input,
+  .ant-picker,
+  .ant-input-number-input,
+  .ant-select-selector {
+    border-radius: 8px !important;
+    padding: 15px !important;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    &:placeholder-shown {
+      background: white;
+    }
+
+    &::placeholder {
+      color: $text-color;
+    }
+  }
+  margin-bottom: unset;
+  padding-bottom: 5px;
+}
+
+.ant-select-selector {
+  height: 57px !important;
+}
+
+.ant-modal-title {
+  color: $text-color !important;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.ant-modal-footer {
+  .ant-btn {
+    padding: 25px !important;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+  }
+}
+
+.ant-modal-close {
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-right: 28px;
+  &:hover {
+    color: rgba(0, 0, 0, 0.75);
+    text-decoration: none;
+    background-color: #EFF0F7;
+    svg {
+      filter: invert(31%) sepia(64%) saturate(4189%) hue-rotate(223deg) brightness(110%) contrast(101%);
+    }
+  }
+}
+
+.ant-modal-content {
+  overflow: auto;
+  border-radius: 24px
+}
+
+.ant-modal-footer {
+  padding-top: 5px;
+}
+.ant-btn {
+  border-radius: 8px;
+}
+.ant-btn-primary {
+  background-color: #3868FE;
+  border-color: #3868FE;
+  &:focus, &:hover {
+    background-color: #3868FE;
+    border-color: #3868FE;
+    opacity: 0.8;
+  }
+}
+
+svg {
+  vertical-align: baseline;
+}

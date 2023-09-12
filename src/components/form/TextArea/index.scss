@@ -1,0 +1,14 @@
+.custom-textarea {
+  &.ant-form-item {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    &::after {
+      content: none;
+    }
+  }
+  .ant-input {
+    height: auto;
+  }
+}

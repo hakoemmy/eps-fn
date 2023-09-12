@@ -1,0 +1,30 @@
+.search-input {
+  display: flex;
+  padding: 5px;
+  align-items: flex-start;
+  transition: width 0.4s ease-in-out;
+  .search-input__img {
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    cursor: pointer;
+    img {
+      width: 100%;
+    }
+  }
+  input {
+    border: none;
+    outline: none;
+    width: 0px;
+    transition: border-bottom 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    &:focus {
+      border-bottom: 1px solid #3868FE;
+      width: 100%;
+    }
+  }
+  input:not(:placeholder-shown) {
+    width: 100%;
+    border-bottom: 1px solid #3868FE;
+  }
+}

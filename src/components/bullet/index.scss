@@ -1,0 +1,11 @@
+.bullet {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #3868FE5A;
+    position: relative;
+}
+
+.bullet.active {
+    background-color: #3868FE;
+}

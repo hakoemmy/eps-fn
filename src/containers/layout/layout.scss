@@ -1,0 +1,41 @@
+$color-primary: #20a8d8;
+
+.ant-layout {
+  background-color: #ffffff;
+}
+
+.dashboard {
+  height: 100vh;
+  background-color: #F9FAFC;
+  @media (max-width: 676px) {
+    .hide-on-mobile {
+      display: none;
+    }
+  }
+
+  .dashboard-body {
+    .body-content {
+      padding: 30px;
+      padding-top: 5px;
+      padding-left: 10px;
+      height: 100%;
+    }
+  }
+
+  #components-layout-demo-responsive .logo {
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px;
+  }
+
+  .site-layout-sub-header-background {
+    background: #fff;
+  }
+
+  .site-layout-background {
+    background: #fff;
+  }
+  .content-layout {
+    margin-top: 5px;
+  }
+}

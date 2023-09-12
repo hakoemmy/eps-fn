@@ -1,0 +1,55 @@
+.custom-antd-switch {
+  .ant-switch-inner {
+    font-size: 12px;
+    font-family: Poppins;
+    font-weight: 800;
+  }
+  .ant-switch {
+    width: 120px;
+    height: 37px;
+    border-radius: 8px;
+    background-color: rgba(204, 0, 0, 0.12);
+
+    .ant-switch-inner {
+      color: rgb(151, 79, 79);
+    }
+
+    .ant-switch-handle {
+      &::before {
+        background-color: rgb(151, 79, 79);
+        content: "\2715";
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .ant-switch-handle {
+    width: 28.5px;
+    height: 28.5px;
+  }
+  .ant-switch-checked {
+    background-color: #f2f5ff;
+
+    .ant-switch-handle {
+      left: calc(100% - 33px);
+
+      &::before {
+        background-color: #3a69ff;
+        left: 4px;
+        top: 4.25px;
+        content: "\2713";
+        color: white;
+      }
+    }
+    .ant-switch-inner {
+      color: #3a69ff;
+    }
+  }
+  .ant-switch-handle::before {
+    border-radius: 10px;
+    left: 4px;
+    top: 4px;
+  }
+}

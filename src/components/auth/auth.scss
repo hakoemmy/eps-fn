@@ -1,0 +1,97 @@
+@import '../../css/variable.scss';
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+  background-color: #f8f9fa;
+
+  .row-login {
+    width: 75%;
+    background: #ffffff;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+  }
+
+  .login-left-container {
+    padding: 50px 70px;
+    width: 50%;
+    background: #fafbfc;
+    .title {
+      color: $primary-color;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 32px;
+    }
+    .description {
+      font-size: 14px;
+      color: $text-color
+    }
+  }
+  .login-right-container {
+    padding: 50px 70px;
+    width: 50%;
+    .title {
+      font-weight: 600;
+      font-size: 24px;
+      color: $text-color;
+    }
+    .description {
+      font-size: 14px;
+      color: $text-color;
+    }
+    .forgot-password,
+    a {
+      text-align: right;
+      text-decoration: none;
+    }
+    form {
+      font-size: 14px !important;
+      margin-top: 10px;
+      input,
+      label {
+        font-size: 14px;
+      }
+    }
+    .button, button {
+      background: $primary-color;
+      margin: auto;
+      border-radius: 8px;
+      border: 0;
+      height: 4rem;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .button {
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .open-mailer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  @media only screen and (max-width: 1000px) {
+    .login-left-container {
+      display: none;
+    }
+    .login-right-container {
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+      .title {
+        text-align: center;
+      }
+    }
+  }
+  @media only screen and (max-width: 486px) {
+    .row-login {
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.form-custom-select {
+  &.ant-form-item {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    &::after {
+      content: none;
+    }
+  }
+}

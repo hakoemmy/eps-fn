@@ -1,0 +1,60 @@
+@import '../../../css/variable.scss';
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.ant-form-item-explain {
+  min-height: unset !important;
+}
+
+.ant-input,
+.ant-input-number-input {
+  padding: 15px !important;
+  height: 3.8em !important;
+}
+
+.ant-input-number,
+.ant-input {
+  border-radius: 8px !important;
+}
+
+.ant-input-number,
+.ant-input,
+.ant-picker {
+  &:hover, &:focus {
+    border-color: $primary-color;
+  }
+  &:focus {
+    box-shadow: 0 0 0 2px $primary-color-second;
+  }
+}
+.ant-input-number-focused,
+.ant-picker-focused,
+.ant-select-focused {
+  box-shadow: 0 0 0 2px $primary-color-second;
+  border-color: $primary-color;
+}
+
+.arrows-disabled {
+  .ant-input-number-handler-wrap {
+    display: none;
+  }
+}
+.custom-input {
+  &.ant-form-item {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    &::after {
+      content: none;
+    }
+  }
+}
